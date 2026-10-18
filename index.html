@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Suu 🤍🎀</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #71364f;
+  text-align: center;
+  background: linear-gradient(135deg, #fff0f5, #ffe0eb, #fff7e8);
+  overflow-x: hidden;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 35px 18px;
+  animation: fade .7s ease;
+}
+
+#opening {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 720px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px 24px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background: rgba(255,255,255,.84);
+  box-shadow: 0 12px 40px #d58ba833;
+}
+
+h1 {
+  color: #c74778;
+  font-size: clamp(32px, 6vw, 54px);
+}
+
+h2 {
+  color: #c74778;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+button {
+  padding: 14px 24px;
+  margin: 8px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background: #d95786;
+  color: white;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  cursor: pointer;
+  transition: .25s;
+  box-shadow: 0 5px 12px #d9578625;
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: #bd3869;
+}
+
+.back {
+  background: #f2b6cb;
+  color: #71364f;
+}
+
+.emoji {
+  font-size: 65px;
+  margin: 12px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.letter {
+  text-align: left;
+  white-space: pre-line;
+}
+
+.small {
+  font-size: 14px;
+  color: #9a647c;
+}
+
+.cake {
+  font-size: 110px;
+  animation: bounce 1.5s infinite;
+}
+
+.heart {
+  position: fixed;
+  bottom: -50px;
+  pointer-events: none;
+  animation: float 6s linear forwards;
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+.sparkle {
+  font-size: 26px;
+}
+
+.timeline {
+  padding: 18px;
+  margin: 18px 0;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #fff0f6, #fff8fb);
+  border: 1px solid #ffd3e3;
+  box-shadow: 0 5px 15px #d58ba815;
+}
+
+.pookie {
+  background: linear-gradient(135deg, #fff0f7, #ffe2ed);
+  border: 2px dashed #f2a6c2;
+  border-radius: 24px;
+  padding: 22px 15px;
+  margin: 20px 0;
+}
+
+.pookie h2 {
+  margin-top: 5px;
+}
+
+.pookie-bear {
+  font-size: 48px;
+  letter-spacing: 5px;
+}
+
+.footer-note {
+  color: #c74778;
+  font-style: italic;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-115vh) rotate(35deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING SURPRISE -->
+<section id="opening" class="page">
+  <div class="emoji">🎀🧸💗</div>
+  <p class="sparkle">A little surprise made with lots of love... 🥹</p>
+
+  <div class="card">
+    <h1>Happpieeesttt Janamadivas!</h1>
+    <h2>Too myy sasuu ka ladla baccha 😽</h2>
+
+    <p>
+      It's your special day, my Suu! 🥹🤍
+      <br>I've made something just for you.
+      <br>Ready to open your surprise, bacchaaa? 🎀
+    </p>
+
+    <button onclick="showPage('home')">
+      Open Your Surprise 💌
+    </button>
+  </div>
+
+  <p class="small">Made with love, just for you ♾️🤍</p>
+</section>
+
+
+<!-- MAIN MENU -->
+<section id="home" class="page">
+  <div class="emoji">🎂🤍🎈</div>
+  <h1>Happy Birthday, Sumit! 💗</h1>
+
+  <div class="card">
+    <h2>My favourite bacchaaa 🥹</h2>
+
+    <p>
+      One birthday, a thousand wishes,
+      and a whole lot of love for you. 🎀
+    </p>
+
+    <div class="pookie">
+      <div class="pookie-bear">🧸 🎀 🐻‍❄️</div>
+      <h2>Warning: Birthday Pookie Alert! 🚨💗</h2>
+      <p>
+        Today's special person is extra cute,
+        extra precious, and officially allowed
+        to demand extra cake! 🎂🤭
+      </p>
+    </div>
+
+    <div class="menu">
+      <button onclick="showPage('letter')">💌 Your Letter</button>
+      <button onclick="showPage('journey')">🧸 Our Journey</button>
+      <button onclick="showPage('cake')">🎂 Cut Your Cake</button>
+      <button onclick="showPage('final')">✨ One Last Surprise</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ORIGINAL BIRTHDAY WISH -->
+<section id="letter" class="page">
+  <h1>A Letter For My Suu 💌</h1>
+
+  <div class="card">
+    <div class="emoji">🥹🤍💗</div>
+
+    <div class="letter">Happiest bdayy myyy babyyy! 🤍
+
+So thanks to ur mom and dad aaa aa, it's actually ur birthday but God blessed me with the best gift of my life — my dear Suu! 🥹
+
+Looking at the years gone by, from without hairs to becoming a bear 🐻‍❄️, seeing you grow from 13 to 23 has been such a beautiful journey! 😉😚
+
+Cheers to your 23 yaaahhh! 🍾🥂🧁
+
+My favourite headache 😩 but my medicine for every pain!
+
+Lovie u so so so much, from the moon and sun to infinity ♾️🤭
+
+Lovie u my bacchaaa 🤍</div>
+
+    <p style="text-align:center">
+      Forever wishing you happiness, success and endless smiles. 🤍
+    </p>
+
+    <div class="emoji">🎀💗🧸</div>
+  </div>
+
+  <button class="back" onclick="showPage('home')">← Back</button>
+</section>
+
+
+<!-- OUR JOURNEY: POOKIE EDITION -->
+<section id="journey" class="page">
+  <h1>Our Little Journey 🧸</h1>
+
+  <div class="card">
+    <div class="emoji">👶🏻➡️🐻‍❄️</div>
+    <h2>From 13 to 23! 😂🤍</h2>
+
+    <div class="timeline">
+      <h2>Chapter 1: The Beginning 🌱</h2>
+      <p>
+        From the younger version of you to the person
+        you are today, look how far you've come!
+        So many memories, so many changes,
+        and still my favourite bacchaaa. 🥹🤍
+      </p>
+    </div>
+
+    <div class="pookie">
+      <div class="pookie-bear">🧸💗🎀</div>
+      <h2>Chapter 2: Certified Pookie! 🤭</h2>
+
+      <p>
+        Officially the birthday boy, permanently
+        my favourite headache, and forever the
+        cutest bacchaaa in my little world. 😭🤍
+      </p>
+
+      <p>
+        Professional at being silly, expert at
+        making me smile, and champion of stealing
+        all the attention! 🐻‍❄️💗
+      </p>
+
+      <p>
+        No refunds, no exchanges, no replacements.
+        This pookie is one of a kind! 🎀😂
+      </p>
+
+      <p class="footer-note">
+        Pookie status: 100% activated. 🧸✨
+      </p>
+    </div>
+
+    <div class="timeline">
+      <h2>Chapter 3: Our Future ✨</h2>
+
+      <p>
+        More birthdays, more dreams, more achievements,
+        more reasons to smile, and many beautiful
+        memories waiting to be made. 🤍
+      </p>
+
+      <p>
+        May you become successful, achieve everything
+        you work for, and always stay the adorable
+        bacchaaa I know. 🧿
+      </p>
+
+      <p>
+        May your days be filled with happiness,
+        your heart with peace, and your life
+        with beautiful surprises. 🎀
+      </p>
+    </div>
+
+    <div class="emoji">🧸💗🌷</div>
+    <h2>End of chapters? Neverrr! ♾️</h2>
+    <p>More cute memories are waiting to happen. 🤭</p>
+  </div>
+
+  <button class="back" onclick="showPage('home')">← Back</button>
+</section>
+
+
+<!-- CAKE -->
+<section id="cake" class="page">
+  <h1>Make a Wish, Birthday Boy! 🎂</h1>
+
+  <div class="card">
+    <div class="cake">🎂</div>
+    <h2>Happy 23rd Birthday, Sumit! 🥳</h2>
+
+    <p>
+      Close your eyes, make your wish,
+      and tap the button below! ✨
+    </p>
+
+    <button onclick="cutCake()">Cut the Cake! 🎂</button>
+
+    <div id="cakeMessage" class="hidden">
+      <div class="emoji">🎉🎊🥳💗</div>
+      <h2>Yayyyy! Cake cutttt! 😭🤍</h2>
+
+      <p>
+        May all your dreams slowly become reality.
+        May you always find reasons to smile.
+        And may this new year of your life bring
+        you confidence, peace, success and happiness.
+      </p>
+
+      <h1>LOVE YOU TO INFINITY ♾️</h1>
+      <p>One extra virtual cake for my pookie! 🍰🤭</p>
+    </div>
+  </div>
+
+  <button class="back" onclick="showPage('home')">← Back</button>
+</section>
+
+
+<!-- FINAL SURPRISE -->
+<section id="final" class="page">
+  <div class="emoji">🌙💗✨</div>
+  <h1>One Last Thing, My Suu...</h1>
+
+  <div class="card">
+    <h2>Read this slowly, bacchaaa. 🥹</h2>
+
+    <p>
+      Out of all the birthday wishes you'll receive,
+      I hope you remember this one thing:
+      you deserve happiness, love, peace and every
+      beautiful opportunity life brings your way.
+    </p>
+
+    <p>
+      Keep growing. Keep dreaming.
+      Keep being your silly, adorable self. 🐻‍❄️
+    </p>
+
+    <p>
+      And even when life gets difficult,
+      I hope you never forget how special
+      and precious you are. 🤍
+    </p>
+
+    <div class="pookie">
+      <div class="emoji">🎂🧸🤍♾️</div>
+      <h1>Happiest Birthday, Suu!</h1>
+      <p>From your favourite headache 😭💗</p>
+      <p class="footer-note">
+        Sending you a million virtual hugs and wishes! 🎀
+      </p>
+    </div>
+
+    <button onclick="celebrate()">Tap for Magic ✨</button>
+
+    <p id="magicMessage" class="hidden">
+      SURPRISEEE! YOU ARE LOVED SO SO SO MUCH! 💗🎉
+      <br>HAPPIEST BIRTHDAY, MY CUTIE PATOOOTIE! 🧸🎀
+    </p>
+  </div>
+
+  <button class="back" onclick="showPage('home')">← Back</button>
+</section>
+
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(function(page) {
+    page.style.display = 'none';
+  });
+
+  const selected = document.getElementById(id);
+  selected.style.display = 'block';
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  for (let i = 0; i < 5; i++) {
+    createHeart();
+  }
+}
+
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+
+  heart.textContent = ['💗', '💕', '🤍', '💖', '✨', '🎀'][
+    Math.floor(Math.random() * 6)
+  ];
+
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.fontSize = (18 + Math.random() * 24) + 'px';
+  heart.style.animationDuration = (4 + Math.random() * 3) + 's';
+
+  document.body.appendChild(heart);
+
+  setTimeout(function() {
+    heart.remove();
+  }, 7500);
+}
+
+function cutCake() {
+  document.getElementById('cakeMessage').classList.remove('hidden');
+
+  for (let i = 0; i < 35; i++) {
+    setTimeout(createHeart, i * 80);
+  }
+}
+
+function celebrate() {
+  document.getElementById('magicMessage').classList.remove('hidden');
+
+  for (let i = 0; i < 50; i++) {
+    setTimeout(createHeart, i * 60);
+  }
+}
+
+setInterval(function() {
+  if (Math.random() > .5) {
+    createHeart();
+  }
+}, 1800);
+
+// Open the first page when the website loads.
+showPage('opening');
+</script>
+
+</body>
+</html>
